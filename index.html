@@ -14,27 +14,29 @@
 <body>
     <header class="header">
         <div class="header_top-bar">
-            <div class="top-bar-left">
-                <ul class="contact-info">
-                    <li class="contact-info_item">
-                        <img src="./icons/location.svg" alt="location" class="contact-info_icon">
-                        <p class="contact-info_capture">23 Aro Lane, NY, USA</p>
-                    </li>
-                    <li class="contact-info_item">
-                        <img src="./icons/phone.svg" alt="phone" class="contact-info_icon">
-                        <a href="tel:+345-000-111-2222" class="contact-info_capture">+345-000-111-2222</a>
-                    </li>
-                    <li class="contact-info_item">
-                        <img src="./icons/time.svg" alt="time" class="contact-info_icon">
-                        <p class="contact-info_capture">mon-sat  10.00 - 19.00</p>
-                    </li>
-                </ul>
-                <select name="lang" id="select-lang">
-                    <option value="en">en</option>
-                    <option value="ru">ru</option>
-                </select>
-            </div>
-            <div class="top-bar-right">providing great services since 1993</div>
+                <div class="top-bar-left">
+                    <ul class="contact-info">
+                        <li class="contact-info_item">
+                            <img src="./icons/location.svg" alt="location" class="contact-info_icon">
+                            <p class="contact-info_capture">23 Aro Lane, NY, USA</p>
+                        </li>
+                        <li class="contact-info_item">
+                            <img src="./icons/phone.svg" alt="phone" class="contact-info_icon">
+                            <a href="tel:+345-000-111-2222" class="contact-info_capture">+345-000-111-2222</a>
+                        </li>
+                        <li class="contact-info_item">
+                            <img src="./icons/time.svg" alt="time" class="contact-info_icon">
+                            <p class="contact-info_capture">mon-sat  10.00 - 19.00</p>
+                        </li>
+                    </ul>
+                    <select name="lang" id="select-lang">
+                        <option value="en">en</option>
+                        <option value="ru">ru</option>
+                    </select>
+                </div>
+                <div class="top-bar-right">
+                    <p class="top-bar-right_text">providing great services since 1993</p>
+                </div>
         </div>
         <div class="header_bottom-bar">
             <a href="index.html">
@@ -44,7 +46,14 @@
                 <ul class="nav-list">
                     <li class="nav-item"><a href="#" class="nav-link nav-link_active">Home</a></li>
                     <li class="nav-item"><a href="#" class="nav-link">About</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Services</a></li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link" id="services">Services</a>
+                        <ul class="submenu submenu_hidden">
+                            <li class="submenu-item"><a class="submenu-link">services-style-1</a></li>
+                            <li class="submenu-item"><a class="submenu-link">services-style-1</a></li>
+                            <li class="submenu-item"><a class="submenu-link">services-style-1</a></li>
+                        </ul>
+                    </li>
                     <li class="nav-item"><a href="#" class="nav-link">Projects</a></li>
                     <li class="nav-item"><a href="#" class="nav-link">Shop</a></li>
                     <li class="nav-item"><a href="#" class="nav-link">Blog</a></li>
@@ -68,15 +77,15 @@
                         </div>
                     </button>
                 <div class="slider-nav-buttons">
-                    <button class="slider-nav-button">
-                        <svg width="14" height="12" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M2 8h12m-6-6l6 6-6 6" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
+                    <button class="slider-nav-button slider-nav-button_inactive">
+                        <svg width="25" height="25" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <polyline points="20,20 80,50 20,80" fill="none" stroke="#002e5b" stroke-width="5" />
+                          </svg>
                     </button>
-                    <button class="slider-nav-button">
-                        <svg width="14" height="12" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M2 8h12m-6-6l6 6-6 6" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
+                    <button class="slider-nav-button slider-nav-button_inactive">
+                        <svg width="25" height="25" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <polyline points="20,20 80,50 20,80" fill="none" stroke="#002e5b" stroke-width="5" />
+                          </svg>
                     </button>
                 </div>
             </div>
@@ -186,12 +195,12 @@
                         <div class="line"></div>
                     </div>
                     <div class="slider-nav-buttons">
-                        <button class="slider-nav-button">
+                        <button class="slider-nav-button slider-nav-button_inactive">
                             <svg width="14" height="12" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M2 8h12m-6-6l6 6-6 6" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
                         </button>
-                        <button class="slider-nav-button">
+                        <button class="slider-nav-button slider-nav-button_inactive">
                             <svg width="14" height="12" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M2 8h12m-6-6l6 6-6 6" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
@@ -261,12 +270,12 @@
                     <div class="line"></div>
                 </div>
                 <div class="slider-nav-buttons">
-                    <button class="slider-nav-button">
+                    <button class="slider-nav-button slider-nav-button_inactive">
                         <svg width="14" height="12" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M2 8h12m-6-6l6 6-6 6" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                     </button>
-                    <button class="slider-nav-button">
+                    <button class="slider-nav-button slider-nav-button_inactive">
                         <svg width="14" height="12" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M2 8h12m-6-6l6 6-6 6" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
@@ -382,12 +391,12 @@
                             <div class="line"></div>
                         </div>
                         <div class="slider-nav-buttons">
-                            <button class="slider-nav-button">
+                            <button class="slider-nav-button slider-nav-button_inactive">
                                 <svg width="14" height="12" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M2 8h12m-6-6l6 6-6 6" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                                 </svg>
                             </button>
-                            <button class="slider-nav-button">
+                            <button class="slider-nav-button slider-nav-button_inactive">
                                 <svg width="14" height="12" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M2 8h12m-6-6l6 6-6 6" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                                 </svg>
@@ -542,4 +551,5 @@
         </div>
     </footer>
     </body>
+    <script src="./index.js"></script>
     </html>
